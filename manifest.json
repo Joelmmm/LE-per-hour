@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "LE Per Hour",
+  "version": "1.0",
+
+  "description": "Parse your plant harvest time info and display a tooltip with it in a LE per hour format.",
+  "homepage_url": "http://path/to/homepage",
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.plantvsundead.com/*"],
+      "js": ["./src/content.js"]
+    }
+  ],
+
+  "permissions": ["tabs"]
+}
