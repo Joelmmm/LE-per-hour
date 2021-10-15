@@ -6,10 +6,6 @@
   "description": "Browser extension for Plan vs Undead. Parse your plant's harvest time info and display a tooltip with it in a LE per hour format.",
   "homepage_url": "https://github.com/Joelmmm/LE-per-hour",
 
-  "background": {
-    "scripts": ["background.js"]
-  },
-
   "content_scripts": [
     {
       "matches": ["*://*.plantvsundead.com/*"],
