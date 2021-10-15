@@ -1,12 +1,11 @@
 {
-  "name": "pvuperhour",
+  "name": "le-per-hour",
   "version": "1.0.0",
-  "description": "",
-  "main": "content.js",
+  "description": "Browser extension for Plan vs Undead. Parse your plant's harvest time info and display a tooltip with it in a LE per hour format.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["browser-extension", "chrome-extension", "firefox-extension", "pvu", "plants vs undead", "LE"],
+  "author": "https://github.com/Joelmmm",
   "license": "ISC"
 }

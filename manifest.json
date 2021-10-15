@@ -3,8 +3,8 @@
   "name": "LE Per Hour",
   "version": "1.0",
 
-  "description": "Parse your plant harvest time info and display a tooltip with it in a LE per hour format.",
-  "homepage_url": "http://path/to/homepage",
+  "description": "Browser extension for Plan vs Undead. Parse your plant's harvest time info and display a tooltip with it in a LE per hour format.",
+  "homepage_url": "https://github.com/Joelmmm/LE-per-hour",
 
   "background": {
     "scripts": ["background.js"]
