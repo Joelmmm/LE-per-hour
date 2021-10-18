@@ -1,6 +1,6 @@
 {
   "name": "le-per-hour",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Browser extension for Plan vs Undead. Parse your plant's harvest time info and display a tooltip with it in a LE per hour format.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
