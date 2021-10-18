@@ -1,19 +1,25 @@
 const parseHarvestInfo = memoHarvestInfo();
 
-document.body.addEventListener('click', event => {
-  const { target } = event;
-  if (target.classList.contains('farm-info')) {
-    toggleHarvestInfo(target)
-  }
-})
-
 document.body.addEventListener('mouseover', event => {
   const { target } = event;
-  if (target.classList.contains('le')) {
-    toggleHarvestInfo(target)
+
+  if (target.classList.contains('le') || target.classList.contains('farm-info')) {
+    toggleHarvestInfo(target);
   } else if (target.classList.contains('stat')) {
     const span = target.querySelector('span');
     toggleHarvestInfo(span);
+  }
+})
+
+document.body.addEventListener('mouseout', event => {
+  const { target } = event;
+
+  if (target.classList.contains('le') || target.classList.contains('farm-info') || target.classList.contains('stat')) {
+    const tooltip = target.querySelector('.tooltip');
+    if (tooltip) {
+      tooltip.remove();
+      return
+    }
   }
 })
 
@@ -46,11 +52,6 @@ const styles = {
 
 function toggleHarvestInfo(target) {
 
-  const tooltip = [...(target.children)].find(child => child.classList.contains('tooltip'))
-  if (tooltip) {
-    tooltip.remove();
-    return
-  }
   const div = document.createElement('div');
   div.className = 'tooltip';
   addStyles(div, styles.tooltip)
@@ -77,7 +78,7 @@ function memoHarvestInfo() {
     if (infoMap.has(info)) {
       return infoMap.get(info);
     }
-    
+
     let dividend = info.replace(/\D/g, ' ').trim();
     // Regex that checks whether a string follows the pattern of an arbitrary and
     // consecutive number of digits followed by a space and then another arbitrary
