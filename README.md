@@ -1,5 +1,5 @@
 # LE-per-hour
-Browser extension for Plan vs Undead. 
+Browser extension for Plant vs Undead. 
 Parse your plant's harvest time info and display a tooltip with it in a LE per hour format.
 
 ### [https://addons.mozilla.org/en-US/firefox/addon/le-per-hour/](https://addons.mozilla.org/en-US/firefox/addon/le-per-hour/)
